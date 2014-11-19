@@ -1,0 +1,972 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"word",
+				"wordArray"
+			],
+			[
+				"dico",
+				"dicoGen"
+			],
+			[
+				"file",
+				"fileIn"
+			],
+			[
+				"str",
+				"strList"
+			],
+			[
+				"AVL",
+				"AVLString"
+			],
+			[
+				"st",
+				"strList"
+			],
+			[
+				"Arr",
+				"ArrayList"
+			],
+			[
+				"next",
+				"nextByte"
+			],
+			[
+				"prin",
+				"println"
+			],
+			[
+				"oter",
+				"oterMin"
+			],
+			[
+				"fils",
+				"filsD_"
+			],
+			[
+				"b",
+				"bal_"
+			],
+			[
+				"ABR",
+				"ABRInt"
+			],
+			[
+				"fi",
+				"filsD_"
+			],
+			[
+				"print",
+				"println"
+			],
+			[
+				"est",
+				"estVide"
+			],
+			[
+				"fil",
+				"filsG_"
+			],
+			[
+				"pri",
+				"println"
+			],
+			[
+				"int",
+				"int"
+			],
+			[
+				"rot",
+				"rotD"
+			],
+			[
+				"ma",
+				"max"
+			],
+			[
+				"fisl",
+				"filsG_"
+			],
+			[
+				"Test",
+				"TestAVLInt"
+			],
+			[
+				"u",
+				"util"
+			],
+			[
+				"A",
+				"AVLInt"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"In",
+				"Integer"
+			],
+			[
+				"AB",
+				"ABRInt"
+			],
+			[
+				"ab",
+				"abrVide"
+			],
+			[
+				"es",
+				"estFeuille"
+			],
+			[
+				"filsG",
+				"filsG_"
+			],
+			[
+				"elt",
+				"element"
+			],
+			[
+				"add",
+				"addAll"
+			],
+			[
+				"f",
+				"filsD_"
+			],
+			[
+				"set",
+				"setFilsD"
+			],
+			[
+				"get",
+				"getRac"
+			],
+			[
+				"rac",
+				"rac_"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"find",
+				"findElement"
+			],
+			[
+				"Tree",
+				"TreeInt"
+			],
+			[
+				"remo",
+				"remove"
+			],
+			[
+				"remove",
+				"removeSon"
+			],
+			[
+				"Noeud",
+				"NoeudInt"
+			],
+			[
+				"No",
+				"NoeudInt"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Main.java",
+			"settings":
+			{
+				"buffer_size": 4922,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "import java.util.*;\nimport java.io.*;\nimport java.util.regex.Pattern;\nimport java.util.regex.Matcher;\n\nclass Main\n{\n	public static void main(String args[])\n	{\n		Scanner input; // file in\n		int ch;\n		int nbChar = 2;\n\n		String str = \"\";\n		String tmp;\n		String[] wordArray;\n		File fileIn = new File(\"\");\n		File fileOut = new File(\"\");\n		BufferedWriter output;\n\n		ArrayList<String> strList = new ArrayList<String>();\n\n		AVLString dicoGen = new AVLString();\n\n		System.out.println(\"(1) Construire automatiquement un dictionnaire contenant tous les mots du livre ?\");\n		System.out.println(\"(2) Utiliser un fichier contenant les mots que vous voulez ?\");\n\n		Scanner sc = new Scanner(System.in);\n\n		ch = sc.nextInt();\n		sc.nextLine();\n\n		if (ch == 1)\n		{\n			System.out.println(\"Mode :\");\n			System.out.println(\"	Test unitaire (lancer le programme pour une longueur de mots et un entier k donné) (1)\");\n			System.out.println(\"	Batterie de tests (lancer une série de test faisant varier les longueurs des mots acceptés et l'entier k, affichant le résultat le plus proche du nombre de chapitres qu'on veut obtenir) (2) ? )\");\n			ch2 = sc.nextInt();\n			sc.nextLine();\n		}\n\n		try\n		{\n			fileOut = new File(\"../Test/dicoGen.txt\"); // file out\n			output = new BufferedWriter(new FileWriter(fileOut)); // to write to output\n\n			if (ch == 1)\n			{\n				for (int i = 0; i < 146 ;i++) // for all pages\n				{\n					fileIn = new File(\"../Andersen - pages/\" + String.valueOf(i + 1)); // open page (i + 1)\n					input = new Scanner(fileIn);\n					\n					// build string containing all text from the page\n					while (input.hasNextLine())\n						str += \" \" + input.nextLine();\n				}\n			}\n			else if (ch == 2)\n			{\n				fileIn = new File(\"../dico1.txt\");\n				input = new Scanner(fileIn);\n				while (input.hasNextLine())\n					str += \" \" + input.nextLine();\n			}\n		\n			// separating words (only words)\n			wordArray = str.split(\"(\\\\W)|(\\\\d)|(\\\\s)\");\n			\n			// adding words to an AVL if length >= 2 (all in lower case)\n			if (ch == 1)\n			{\n				System.out.print(\"Donner le nombre minimal de caractères qu'un mot doit contenir pour être retenu dans le dictionnaire : \");\n				nbChar = sc.nextInt();\n				sc.nextLine();\n			}\n\n			if (ch2 != 2)\n			{\n				fileOut = new File(\"../Test/dicoGen.txt\"); // file out\n				output = new BufferedWriter(new FileWriter(fileOut)); // to write to output\n	\n				for (int j = 0; j < wordArray.length ;j++)\n				{\n					tmp = wordArray[j];\n					System.out.println(tmp);\n					if (ch == 1)\n					{\n						Pattern pattern = Pattern.compile(\".{\" + String.valueOf(nbChar) + \",}\");\n						Matcher matcher = pattern.matcher(tmp);\n						if (matcher.find())\n						{\n							System.out.println(\"test : \" + tmp);\n							dicoGen.ajout(wordArray[j].toLowerCase(Locale.ENGLISH));\n						}\n					}\n					else if (ch == 2)\n						dicoGen.ajout(wordArray[j].toLowerCase(Locale.ENGLISH));\n				}\n				// getting words in lexicographic order from the AVL\n				strList = dicoGen.symm();\n	\n				// écriture de tous les mots du dictionnaire) dans le fichier dicoGen.txt\n				output.write(strList.get(0) + \"\\n\");\n				for (int j = 1; j < strList.size() ;j++)\n					output.write(strList.get(j) + \"\\n\");\n				output.close();\n			}\n			else if (ch2 == 2)\n			{\n				for (int l = 2; l < 10 ;l++)\n				{\n					fileOut = new File(\"../Test/dicoGen(nbChar=\" + String.valueOf(l) + \".txt\"); // file out\n					output = new BufferedWriter(new FileWriter(fileOut)); // to write to output\n		\n					for (int j = 0; j < wordArray.length ;j++)\n					{\n						tmp = wordArray[j];\n						Pattern pattern = Pattern.compile(\".{\" + String.valueOf(l) + \",}\");\n						Matcher matcher = pattern.matcher(tmp);\n						if (matcher.find())\n						{\n							System.out.println(\"test : \" + tmp);\n							dicoGen.ajout(wordArray[j].toLowerCase(Locale.ENGLISH));\n						}\n					}\n					strList = dicoGen.symm();\n					output.write(strList.get(0) + \"\\n\");\n					for (int j = 1; j < strList.size() ;j++)\n						output.write(strList.get(j) + \"\\n\");\n					output.close();\n				}\n			}\n		}\n		//	} catch ( IOException e ) { e.printStackTrace(); }\n\n		\n		//else if (sc == 1)\n		//{\n		//	System.out.println(\"Le fichier utilisé est '../dico1.txt', si vous ne l'avez pas déjà remplacé\\navec votre propre dictionnaire, faites puis relancez le programme SVP\");\n		//}\n\n\n\n		\n\n		/***************************************************************************************/\n\n			Page p;\n			int k;\n			AVLString a = new AVLString();\n			ArrayList<Page> pages = new ArrayList<Page>();\n	\n			for (int i = 0; i < 146 ;i++)\n			{\n				fileIn = new File(\"../Andersen - pages/\" + String.valueOf(i + 1)); // open page (i + 1)\n				//input = new Scanner(fileIn);\n				\n				p = new Page(fileIn,dicoGen);\n				\n				//p.consDicoPage(dicoGen);\n\n				a.copy(p.getData());\n				fileOut = new File(\"../Test/dicoPage\" + String.valueOf(p.getId()) + \".txt\"); // file out\n				output = new BufferedWriter(new FileWriter(fileOut)); // to write to output\n\n				// écriture de tous les mots de la page i (faisant aussi partie du dictionnaire) dans le fichier dicoPage\\i\\.txt\n				while (!(a.estVide()))\n				{\n					output.write(a.max() + \" \");\n					a.oterMax();\n				}\n				output.close();\n				pages.add(p);\n			}\n\n			Chapitres c = new Chapitres(pages, dicoGen);\n\n			System.out.print(\"	K : \");\n			k = sc.nextInt();\n\n			c.formerChapsWithK(k);\n\n			ArrayList<ArrayList<Integer>> res = c.result();\n\n			// Ecriture du résultat dans le fichier results(K=\\k\\).txt\n			if (ch == 1)\n				fileOut = new File(\"../Test/results(Mots d'au moins \" + String.valueOf(nbChar) + \" caractères, (K=\" + String.valueOf(k) + \").txt\");\n			else\n				fileOut = new File(\"../Test/results(Dico prédéfini, K=\" + String.valueOf(k) + \").txt\");\n			output = new BufferedWriter(new FileWriter(fileOut)); // to write to output\n\n			for (int i = 0; i < res.size() ;i++)\n			{\n				output.write(\"	Le chapitre \" + (i + 1) + \" contient les pages d'identifiants : \");\n				for (int j = 0; j < res.get(i).size() ;j++)\n				{\n					output.write(res.get(i).get(j) + \", \");\n					//System.out.print(res.get(i).get(j) + \" \");\n				}\n				//System.out.println(\"\\n\");\n				output.write(\"\\n\");\n			}\n			output.close();\n\n			str = \"[\";\n			for (int i = 0; i < c.getPeres().size() - 1 ;i++)\n				str += c.getPeres().get(i) + \",\";\n			str += c.getPeres().get(c.getPeres().size() - 1);\n			str += \"]\";\n			System.out.println(str);\n		} catch ( IOException e ) { e.printStackTrace(); }\n	}\n}",
+			"file": "Main3.java",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 6338,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Chapitres.java",
+			"settings":
+			{
+				"buffer_size": 6992,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Page.java",
+			"settings":
+			{
+				"buffer_size": 4260,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "AVLString.java",
+			"settings":
+			{
+				"buffer_size": 14784,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR"
+	],
+	"file_history":
+	[
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/QuelBazar/Code/Main3.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/QuelBazar/Code/Main2.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/QuelBazar/Code/AVLString.class",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/QuelBazar/Code/TestAVLString.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/QuelBazar/Code/ConstDico2.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/7 nouvelles - pages/dico2.txt",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/7 nouvelles - pages/dico.txt",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Andersen - pages/dico2.txt",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/AVLInt.java",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/A.java",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/TestAVLInt.java",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/TestAVLString.java",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR (String)/ABRString.java",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR (String)/TestABRString.java",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/TestAVLInt.class",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR (String)/ABRInt.class",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR (String)/AVLInt.class",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR (String)/TestABRInt.class",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR (String)/TestAVLInt.class",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/ABRInt.java",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/TestABRInt.java",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/ABRInt.class",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/ABRInt.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/AVLInt.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/TestABRInt.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/TestAVLInt.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/TestABRInt (1).java",
+		"/home/jerome/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/jerome/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/jerome/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/jerome/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/ABR/Main.java",
+		"/home/jerome/.config/sublime-text-3/Packages/DocBlockr/Base File.sublime-settings",
+		"/home/jerome/.config/sublime-text-3/Packages/User/Java.sublime-settings",
+		"/home/jerome/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Arbres/ABR/Main.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Arbres/ABR/NoeudInt.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Arbres/ABR/ABRInt.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Arbres/Main.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Arbres/NodeInt.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Arbres/Tree.java",
+		"/home/jerome/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Maille.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Arbres/Noeud(as abstract class).java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Main.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/MailleString.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/MailleInt.java",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Chaine.java",
+		"/home/jerome/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/desktop.ini",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Chaine.class",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Maille.class",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/MailleInt.class",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/MailleString.class",
+		"/media/Datas/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/Main.class",
+		"/media/Datas/Logiciels & Programmes/Prog/Sublime-text/untitled.cpp"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\",}\");",
+			"str",
+			"wordArray",
+			"tmp",
+			"ajout",
+			"if",
+			"nextByte",
+			"fileInput",
+			"i",
+			"\"!\"",
+			"trier",
+			"print(in",
+			"print()",
+			"print",
+			"aff",
+			"nextIn",
+			"sc.",
+			"Array",
+			"element",
+			"nextInt",
+			"Entier",
+			"Integer",
+			"integer",
+			"AVLInt",
+			"/**\n",
+			"ajout",
+			"equilib",
+			"drotd",
+			"suppr",
+			"{\n",
+			"rac_",
+			"bal()",
+			"bal",
+			"();\n",
+			"ajout",
+			"ABR",
+			"abr",
+			"ABR",
+			"bal",
+			"()))",
+			"avlV",
+			"*/\n",
+			"abr",
+			"ABR",
+			"abr",
+			"ABRInt",
+			"\n// Programme de test de la classe ABRInt\n\nimport java.util.*;\n\npublic class TestABRInt\n{\n	public static void main(String args[])\n	{\n		Scanner sc = new Scanner(System.in);\n\n		int ch = -1;\n		int elt;\n		boolean aff = true;\n		\n		ABRInt a = new ABRInt();\n		ArrayList<Integer> l;\n\n		System.out.println(\"\\n---- Programme de test des ABR pour manipuler des entier, ABR initialisé à vide ----\");\n\n		do\n		{\n			System.out.println(\"	Que souhaitez-vous faire ?\");\n			System.out.println(\"\\n		---- Initialisation ----\");\n			System.out.println(\"		Réinitialiser l'ABR à vide					(1)\");\n			System.out.println(\"\\n		---- Tests ---- \");\n			System.out.println(\"		Tester si l'ABR est un arbre vide				(2)\");\n			System.out.println(\"		Tester si l'ABR est un arbre feuille				(3)\");\n			System.out.println(\"		Tester si un entier est présent dans l'arbre			(4)\");\n			System.out.println(\"\\n		---- Modifications de l'arbre ---- \");\n			System.out.println(\"		Ajouter un élément 						(5)\");\n			System.out.println(\"		Supprimer un élément						(6)\");\n			System.out.println(\"		Supprimer le plus grand élément					(7)\");\n			System.out.println(\"		Supprimer le plus petit élément					(8)\");\n\n			System.out.println(\"\\n		---- Autres ---- \");\n			System.out.println(\"		Trier une liste gràce à un ABR					(9)\");\n\n			System.out.println(\"\\n		---- Affichage ---- \");\n			System.out.println(\"		Afficher le plus grand élément					(10)\");\n			System.out.println(\"		Afficher le plus petit élément					(11)\");\n			System.out.println(\"		Activer/Désactiver l'affichage en liste				(12)\");\n\n			System.out.println(\"		Quitter le programme						(0)\");\n\n			System.out.print(\"		 => \");\n			ch = sc.nextInt();\n			switch (ch)\n			{\n				case (1):\n					a.abrVide();\n					System.out.println(\"			ABR réinitialisé à vide\");\n					break;\n				case (2):\n					System.out.println(\"			\" + a.estVide());\n					break;\n				case (3):\n					System.out.println(\"			\" + a.estFeuille());\n					break;\n				case (4):\n					System.out.println(\"			Entier à rechercher : \");\n					elt = sc.nextInt();\n					System.out.println(\"			\" + a.element(elt));\n					break;\n				case (5):\n					System.out.println(\"			Entier à ajouter : \");\n					elt = sc.nextInt();\n					a.ajout(elt);\n					break;\n				case (6):\n					System.out.println(\"			Entier à supprimer : \");\n					elt = sc.nextInt();\n					a.suppr(elt);\n					break;\n				case (7):\n					a.oterMax();\n					break;\n				case (8):\n					a.oterMin();\n					break;\n				case (9):\n					System.out.println(\"			Entrez un à un les entiers de la liste en validant entre chaque avec entrée, et entrez zéro pour indiquer que vous avez fini\\n\");\n					l = new ArrayList<Integer>();\n					elt = 1;\n					while (elt != 0)\n					{\n						System.out.print(\"			=> \");\n						elt = sc.nextInt();\n						l.add(elt);\n					}\n					System.out.print(\"		Liste saisie : [\");\n					for (int i = 0; i < l.size() - 1 ;i++)\n						System.out.print(l.get(i) + \",\");\n					System.out.print(l.get(l.size() - 1) + \"]\\n		Liste triée : [\");\n					\n					l = a.trier(l);\n					for (int i = 0; i < l.size() - 1 ;i++)\n						System.out.print(l.get(i) + \",\");\n					System.out.println(l.get(l.size() - 1) + \"]\");\n					break;\n				case (10):\n					System.out.println(\"			\" + a.max());\n					break;\n				case (11):\n					System.out.println(\"			\" + a.min());\n					break;\n				case (12):\n					aff = !aff;\n					break;					\n				case (0):\n					break;\n				default:\n					System.out.println(\"			Erreur de saisie utilisateur\\n\");\n					break;\n			}\n			if (aff && (ch != 0))\n			{\n				System.out.println(\"\\n 		Parcours préfixe de l'arbre : 		\" + a.print(1));\n				System.out.println(\" 		Parcours symétrique de l'arbre : 	\" + a.print(2));\n				System.out.println(\" 		Parcours postfixe de l'arbre : 		\" + a.print(3));\n			}\n		} while (ch != 0);\n	}\n}",
+			"abrv",
+			"estVide",
+			"proxy",
+			"0",
+			"else",
+			"}\n",
+			"();\n",
+			"nt(3)",
+			";\n",
+			"();\n",
+			"str",
+			"syste",
+			"();",
+			"tree",
+			"root_",
+			"System",
+			"sons_",
+			"\n		",
+			"t",
+			"getElt",
+			"public",
+			"Object",
+			"int",
+			"public",
+			"NoeudInteger",
+			"int",
+			"NoeudInt",
+			"}",
+			"lines",
+			"alt+shift"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"NoeudString"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Main.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4922,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2564,
+								2564
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 867.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Main3.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4647,
+								4647
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2148.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Chapitres.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3825,
+								3825
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1836.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Page.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "AVLString.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3458.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "QuelBazar.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

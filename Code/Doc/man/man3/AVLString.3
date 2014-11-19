@@ -1,0 +1,439 @@
+.TH "AVLString" 3 "Fri Nov 7 2014" "AVLString" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AVLString \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAVLString\fP ()"
+.br
+.ti -1c
+.RI "\fBAVLString\fP (String rac)"
+.br
+.ti -1c
+.RI "\fBAVLString\fP (String rac, \fBAVLString\fP filsG, \fBAVLString\fP filsD)"
+.br
+.ti -1c
+.RI "String \fBelt\fP ()"
+.br
+.ti -1c
+.RI "\fBAVLString\fP \fBsag\fP ()"
+.br
+.ti -1c
+.RI "\fBAVLString\fP \fBsad\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetBal\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRac\fP (String rac)"
+.br
+.ti -1c
+.RI "void \fBsetFilsG\fP (\fBAVLString\fP filsG)"
+.br
+.ti -1c
+.RI "void \fBsetFilsD\fP (\fBAVLString\fP filsD)"
+.br
+.ti -1c
+.RI "void \fBsetBal\fP (int \fBbal\fP)"
+.br
+.ti -1c
+.RI "void \fBavlVide\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBestVide\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBestFeuille\fP ()"
+.br
+.ti -1c
+.RI "void \fBbal\fP ()"
+.br
+.ti -1c
+.RI "int \fBhauteur\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBelement\fP (String \fBelt\fP)"
+.br
+.ti -1c
+.RI "int \fBajout\fP (String \fBelt\fP)"
+.br
+.ti -1c
+.RI "int \fBsuppr\fP (String \fBelt\fP)"
+.br
+.ti -1c
+.RI "void \fBcopy\fP (\fBAVLString\fP av)"
+.br
+.ti -1c
+.RI "void \fBrotG\fP ()"
+.br
+.ti -1c
+.RI "void \fBrotD\fP ()"
+.br
+.ti -1c
+.RI "void \fBdRotG\fP ()"
+.br
+.ti -1c
+.RI "void \fBdRotD\fP ()"
+.br
+.ti -1c
+.RI "void \fBequilibrer\fP ()"
+.br
+.ti -1c
+.RI "String \fBmax\fP ()"
+.br
+.ti -1c
+.RI "String \fBmin\fP ()"
+.br
+.ti -1c
+.RI "int \fBoterMax\fP ()"
+.br
+.ti -1c
+.RI "int \fBoterMin\fP ()"
+.br
+.ti -1c
+.RI "ArrayList< String > \fBtrier\fP (ArrayList< String > l)"
+.br
+.ti -1c
+.RI "ArrayList< String > \fBpref\fP ()"
+.br
+.ti -1c
+.RI "ArrayList< String > \fBsymm\fP ()"
+.br
+.ti -1c
+.RI "ArrayList< String > \fBpost\fP ()"
+.br
+.ti -1c
+.RI "String \fBprint\fP (int ch)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "String \fBrac_\fP"
+.br
+.ti -1c
+.RI "\fBAVLString\fP \fBfilsG_\fP"
+.br
+.ti -1c
+.RI "\fBAVLString\fP \fBfilsD_\fP"
+.br
+.ti -1c
+.RI "int \fBbal_\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AVLString\&.AVLString ()"
+[\fBAVLString\fP => Construit un AVL 'vide'] 
+.PP
+\fBReturns:\fP
+.RS 4
+[équivalent d'un AVL vide -> racine et sous arbres non initialisés] 
+.RE
+.PP
+
+.SS "AVLString\&.AVLString (Stringrac)"
+[\fBAVLString\fP => Construit un AVL 'feuille'] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrac\fP [valeur de la racine] 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+[équivalent d'un AVL feuille -> racine initialisée et sous-arbres vides] 
+.RE
+.PP
+
+.SS "AVLString\&.AVLString (Stringrac, \fBAVLString\fPfilsG, \fBAVLString\fPfilsD)"
+[\fBAVLString\fP => Construit un AVL donc la forme dépendra des paramètres passés] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrac\fP [valeur de la racine] 
+.br
+\fIfilsG\fP [AVL qui sera fils gauche] 
+.br
+\fIfilsD\fP [AVL qui sera fils droit] 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+[AVL de forme quelconque, selon les paramètres passés] 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int AVLString\&.ajout (Stringelt)"
+[ajout => Ajoute elt à l'AVL, et retourne la variation de hauteur] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelt\fP [String] 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+[entier] 
+.RE
+.PP
+
+.SS "void AVLString\&.avlVide ()"
+[avlVide => Remplace l'AVL par un arbre vide] 
+.SS "void AVLString\&.bal ()"
+[bal => Recalcule récursivement la balance de l'AVL et celles de tous ses fils] 
+.SS "void AVLString\&.copy (\fBAVLString\fPav)"
+[copy => Retourne une copie de l'AVL passé en paramètre] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIav\fP [AVL] 
+.RE
+.PP
+
+.SS "void AVLString\&.dRotD ()"
+[dRotD => Effectue une double rotation droite sur l'AVL] 
+.SS "void AVLString\&.dRotG ()"
+[dRotG => Effectue une double rotation gauche sur l'AVL] 
+.SS "boolean AVLString\&.element (Stringelt)"
+[element => Renvoie vrai si elt est présent dans l'AVL, faux sinon] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelt\fP [String] 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+[booléen] 
+.RE
+.PP
+
+.SS "String AVLString\&.elt ()"
+[elt => Retourne la racine de l'AVL] 
+.PP
+\fBReturns:\fP
+.RS 4
+[String (valeur de la racine)] 
+.RE
+.PP
+
+.SS "void AVLString\&.equilibrer ()"
+[equilibrer => Méthode appellée pour équilibrer l'AVL après ajout ou suppression] 
+.SS "boolean AVLString\&.estFeuille ()"
+[estFeuille => Renvoie vrai si l'AVL correspond à un AVL feuille, faux sinon] 
+.PP
+\fBReturns:\fP
+.RS 4
+[booléen] 
+.RE
+.PP
+
+.SS "boolean AVLString\&.estVide ()"
+[estVide => Renvoie vrai si l'AVL est vide, faux sinon] 
+.PP
+\fBReturns:\fP
+.RS 4
+[booléen] 
+.RE
+.PP
+
+.SS "int AVLString\&.getBal ()"
+[getBal => Retourne la balance de l'AVL] 
+.PP
+\fBReturns:\fP
+.RS 4
+[entier (balance)] 
+.RE
+.PP
+
+.SS "int AVLString\&.hauteur ()"
+[hauteur => Renvoie la hauteur de l'AVL (la racine étant à la hauteur 0)] 
+.PP
+\fBReturns:\fP
+.RS 4
+[entier] 
+.RE
+.PP
+
+.SS "String AVLString\&.max ()"
+[max => Retourne le plus grand élément de l'AVL (-1 si l'AVL est vide)] 
+.PP
+\fBReturns:\fP
+.RS 4
+[entier] 
+.RE
+.PP
+
+.SS "String AVLString\&.min ()"
+[min => Retourne le plus petit élément de l'AVL ('!' si l'AVL est vide)]] 
+.PP
+\fBReturns:\fP
+.RS 4
+[entier] 
+.RE
+.PP
+
+.SS "int AVLString\&.oterMax ()"
+[oterMax => Retire le noeud contenant le plus grand élément de l'AVL (si celui-ci n'est pas vide)] 
+.PP
+\fBReturns:\fP
+.RS 4
+[entier (correspondant à la variation de hauteur)] 
+.RE
+.PP
+
+.SS "int AVLString\&.oterMin ()"
+[oterMin => Retire le noeud contenant le plus petit élément de l'AVL (si celui-ci n'est pas vide)] 
+.PP
+\fBReturns:\fP
+.RS 4
+[entier (correspondant à la variation de hauteur)] 
+.RE
+.PP
+
+.SS "ArrayList<String> AVLString\&.post ()"
+[post => Retourne le parcours postfixe de l'AVL] 
+.PP
+\fBReturns:\fP
+.RS 4
+[ArrayList<String>] 
+.RE
+.PP
+
+.SS "ArrayList<String> AVLString\&.pref ()"
+[pref => Retourne le parcours préfixe de l'AVL] 
+.PP
+\fBReturns:\fP
+.RS 4
+[ArrayList<String>] 
+.RE
+.PP
+
+.SS "String AVLString\&.print (intch)"
+[print => Renvoie une chaîne représentant l'AVL en liste par son parcours préfixe, symétrique ou postfixe selon la valeur de l'entier passé en paramètre] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIch\fP [entier, définissant le parcours devant être utilisé pour représenter l'AVL] si ch == 1 : parcours préfixe si ch == 2 : parcours symétrique si ch == 3 : parcours postfixe 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+[chaîne de caractères] 
+.RE
+.PP
+
+.SS "void AVLString\&.rotD ()"
+[rotD => Effectue une rotation droite (simple) sur l'AVL] 
+.SS "void AVLString\&.rotG ()"
+[rotG => Effectue une rotation gauche (simple) sur l'AVL] 
+.SS "\fBAVLString\fP AVLString\&.sad ()"
+[sad => Retourne le sous-arbre droit de l'AVL] 
+.PP
+\fBReturns:\fP
+.RS 4
+[AVL (sous-arbre droit)] 
+.RE
+.PP
+
+.SS "\fBAVLString\fP AVLString\&.sag ()"
+[sag => Retourne le sous-arbre gauche de l'AVL] 
+.PP
+\fBReturns:\fP
+.RS 4
+[AVL (sous-arbre gauche)] 
+.RE
+.PP
+
+.SS "void AVLString\&.setBal (intbal)"
+[setBal => Remplace la balance] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbal\fP [entier] 
+.RE
+.PP
+
+.SS "void AVLString\&.setFilsD (\fBAVLString\fPfilsD)"
+[setFilsD => Remplace le fils droit] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilsD\fP [AVL] 
+.RE
+.PP
+
+.SS "void AVLString\&.setFilsG (\fBAVLString\fPfilsG)"
+[setFilsG => Remplace le fils gauche] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilsG\fP [AVL] 
+.RE
+.PP
+
+.SS "void AVLString\&.setRac (Stringrac)"
+[setRac => Remplace la valeur de la racine] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrac\fP [String] 
+.RE
+.PP
+
+.SS "int AVLString\&.suppr (Stringelt)"
+[suppr => Retire le noeud ayant elt pour élément de l'AVL (s'il existe)] 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelt\fP [String] 
+.RE
+.PP
+
+.SS "ArrayList<String> AVLString\&.symm ()"
+[symm => Retourne le parcours symétrique de l'AVL] 
+.PP
+\fBReturns:\fP
+.RS 4
+[ArrayList<String>] 
+.RE
+.PP
+
+.SS "ArrayList<String> AVLString\&.trier (ArrayList< String >l)"
+[trier => Trie une liste de String en utilisant un AVL (ordre lexicographique)] NB: La méthode n'utilise pas l'AVL auquel la méthode est appliquée au cas ou celui-ci ne serait pas vide, ce qui fausserait le résultat 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIl\fP [ArrayList<String> liste de Strings dont l'ordre est quelconque] 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+[ArrayList<String> liste de Strings triées par ordre croissant] 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int AVLString\&.bal_\fC [private]\fP"
+balance -> entier 
+.SS "\fBAVLString\fP AVLString\&.filsD_\fC [private]\fP"
+fils droit -> lui-même AVL 
+.SS "\fBAVLString\fP AVLString\&.filsG_\fC [private]\fP"
+fils gauche -> lui-même AVL 
+.SS "String AVLString\&.rac_\fC [private]\fP"
+racine String 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for AVLString from the source code\&.

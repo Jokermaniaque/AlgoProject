@@ -1,0 +1,849 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_a_v_l_string">
+<title>AVLString class Reference</title>
+        <simplesect>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>String rac_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AVLString filsG_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AVLString filsD_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int bal_</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_a_v_l_string_1a7cae60ef637f6aad039371478fc5deed">AVLString</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_a_v_l_string_1a03a3566175c444bf44100d4b5ed8ae3e">AVLString</link> (
+String rac)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_a_v_l_string_1ad54ef293b3b066f1cfbcfd33b110a523">AVLString</link> (
+String rac, <link linkend="class_a_v_l_string">AVLString</link> filsG, <link linkend="class_a_v_l_string">AVLString</link> filsD)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>String <link linkend="class_a_v_l_string_1a04e9b58049f335c818886b69ae3ececc">elt</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_a_v_l_string">AVLString</link> <link linkend="class_a_v_l_string_1a0c2b74170cea4c3aae4859c9504f8440">sag</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_a_v_l_string">AVLString</link> <link linkend="class_a_v_l_string_1a5ed9a9d93f55b1691126934d33b7ff04">sad</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_a_v_l_string_1a9b6514bbe1eeb60cd063038f633638a0">getBal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1aa1de0f428ebeb20058ac04f03f948220">setRac</link> (
+String rac)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1ac4f52500381c77fb5ec4a1f30cc98f9c">setFilsG</link> (
+<link linkend="class_a_v_l_string">AVLString</link> filsG)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1afe2973bf4e0b311745d8a0e78ce37f87">setFilsD</link> (
+<link linkend="class_a_v_l_string">AVLString</link> filsD)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1af557c5f3b98c3df26a8866e89fd4e173">setBal</link> (
+int bal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1a822881c4be4ef7e6aada44f6b9b9487a">avlVide</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boolean <link linkend="class_a_v_l_string_1a82630baa2869275d044e3f25d40d52f7">estVide</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boolean <link linkend="class_a_v_l_string_1a5f0d9ef42d56854c6977b1e7e143197e">estFeuille</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1ae45259bb6e0ecd30b7764c270f2421eb">bal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_a_v_l_string_1aa452d84d47b7bf724362d5f856be3374">hauteur</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>boolean <link linkend="class_a_v_l_string_1abd6d41261357b2501fc805216f6eb456">element</link> (
+String elt)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_a_v_l_string_1a450d8ec3c60cf1a989f03112f4b9855d">ajout</link> (
+String elt)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_a_v_l_string_1a1f73174ef1b9a223d94e44719cc6736f">suppr</link> (
+String elt)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1a738d9b71bb2ee680c2bebe547da683e7">copy</link> (
+<link linkend="class_a_v_l_string">AVLString</link> av)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1ad960ebcc3991cb679add72f3dda4caa0">rotG</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1a16e45537a756d78a0f54020e4ca3dd82">rotD</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1ae9bb040328e2fe9a02ae68178231cf41">dRotG</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1a6234278e0d2587d5f899dc003c7d1de6">dRotD</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_a_v_l_string_1afd90cb3564177a7a37056164d039b0dd">equilibrer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>String <link linkend="class_a_v_l_string_1aa1d9f436aa7766d5ec0498454f32dfe9">max</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>String <link linkend="class_a_v_l_string_1a9535c4d4517a1103149b348e1126765d">min</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_a_v_l_string_1a5d47afdb15e0cf57f7e27c2f1e1a3c3d">oterMax</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_a_v_l_string_1a4bb66e491eccfc0531239f57bf9b01f1">oterMin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ArrayList&lt; String &gt; <link linkend="class_a_v_l_string_1abe38e3948352fcffc2db0f066c3b97cf">trier</link> (
+ArrayList&lt; String &gt; l)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ArrayList&lt; String &gt; <link linkend="class_a_v_l_string_1aa8e9250c0b5719b2f197e24c4be4b9e8">pref</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ArrayList&lt; String &gt; <link linkend="class_a_v_l_string_1a0efe1dbea6307856f3b727df8663b66f">symm</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>ArrayList&lt; String &gt; <link linkend="class_a_v_l_string_1a11601b5dbb6e37215708938323364af7">post</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>String <link linkend="class_a_v_l_string_1adde3aa65616bf1c05ea2407ea8cb255f">print</link> (
+int ch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Member Documentation</title>
+            <simplesect>
+                <title>String AVLString.rac_</title>                
+<para>racine String </para>
+
+                <para>Definition at line 15 of file AVLString.java</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>AVLString.java</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>AVLString AVLString.filsG_</title>                
+<para>fils gauche -&gt; lui-même AVL </para>
+
+                <para>Definition at line 16 of file AVLString.java</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>AVLString.java</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>AVLString AVLString.filsD_</title>                
+<para>fils droit -&gt; lui-même AVL </para>
+
+                <para>Definition at line 17 of file AVLString.java</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>AVLString.java</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>int AVLString.bal_</title>                
+<para>balance -&gt; entier </para>
+
+                <para>Definition at line 18 of file AVLString.java</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>AVLString.java</para></listitem></itemizedlist></para>
+            </simplesect>
+        </simplesect>
+            <section xml:id="class_a_v_l_string_1a7cae60ef637f6aad039371478fc5deed">
+                <title>AVLString.AVLString ()</title> <emphasis></emphasis>
+                
+<para>[<link linkend="class_a_v_l_string">AVLString</link> =&gt; Construit un AVL &quot;vide&quot;] <formalpara><title>Returns: </title>
+
+<para>[équivalent d&apos;un AVL vide -&gt; racine et sous arbres non initialisés] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a03a3566175c444bf44100d4b5ed8ae3e">
+                <title>AVLString.AVLString (String rac)</title> <emphasis></emphasis>
+                
+<para>[<link linkend="class_a_v_l_string">AVLString</link> =&gt; Construit un AVL &quot;feuille&quot;] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>rac</entry>
+                                <entry>
+<para>[valeur de la racine] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>[équivalent d&apos;un AVL feuille -&gt; racine initialisée et sous-arbres vides] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1ad54ef293b3b066f1cfbcfd33b110a523">
+                <title>AVLString.AVLString (String rac, AVLString filsG, AVLString filsD)</title> <emphasis></emphasis>
+                
+<para>[<link linkend="class_a_v_l_string">AVLString</link> =&gt; Construit un AVL donc la forme dépendra des paramètres passés] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>rac</entry>
+                                <entry>
+<para>[valeur de la racine] </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>filsG</entry>
+                                <entry>
+<para>[AVL qui sera fils gauche] </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>filsD</entry>
+                                <entry>
+<para>[AVL qui sera fils droit] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>[AVL de forme quelconque, selon les paramètres passés] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a04e9b58049f335c818886b69ae3ececc">
+                <title>String AVLString.elt ()</title> <emphasis></emphasis>
+                
+<para>[elt =&gt; Retourne la racine de l&apos;AVL] <formalpara><title>Returns: </title>
+
+<para>[String (valeur de la racine)] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a0c2b74170cea4c3aae4859c9504f8440">
+                <title>AVLString AVLString.sag ()</title> <emphasis></emphasis>
+                
+<para>[sag =&gt; Retourne le sous-arbre gauche de l&apos;AVL] <formalpara><title>Returns: </title>
+
+<para>[AVL (sous-arbre gauche)] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a5ed9a9d93f55b1691126934d33b7ff04">
+                <title>AVLString AVLString.sad ()</title> <emphasis></emphasis>
+                
+<para>[sad =&gt; Retourne le sous-arbre droit de l&apos;AVL] <formalpara><title>Returns: </title>
+
+<para>[AVL (sous-arbre droit)] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a9b6514bbe1eeb60cd063038f633638a0">
+                <title>int AVLString.getBal ()</title> <emphasis></emphasis>
+                
+<para>[getBal =&gt; Retourne la balance de l&apos;AVL] <formalpara><title>Returns: </title>
+
+<para>[entier (balance)] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1aa1de0f428ebeb20058ac04f03f948220">
+                <title>void AVLString.setRac (String rac)</title> <emphasis></emphasis>
+                
+<para>[setRac =&gt; Remplace la valeur de la racine] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>rac</entry>
+                                <entry>
+<para>[String] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1ac4f52500381c77fb5ec4a1f30cc98f9c">
+                <title>void AVLString.setFilsG (AVLString filsG)</title> <emphasis></emphasis>
+                
+<para>[setFilsG =&gt; Remplace le fils gauche] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>filsG</entry>
+                                <entry>
+<para>[AVL] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1afe2973bf4e0b311745d8a0e78ce37f87">
+                <title>void AVLString.setFilsD (AVLString filsD)</title> <emphasis></emphasis>
+                
+<para>[setFilsD =&gt; Remplace le fils droit] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>filsD</entry>
+                                <entry>
+<para>[AVL] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1af557c5f3b98c3df26a8866e89fd4e173">
+                <title>void AVLString.setBal (int bal)</title> <emphasis></emphasis>
+                
+<para>[setBal =&gt; Remplace la balance] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>bal</entry>
+                                <entry>
+<para>[entier] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a822881c4be4ef7e6aada44f6b9b9487a">
+                <title>void AVLString.avlVide ()</title> <emphasis></emphasis>
+                
+<para>[avlVide =&gt; Remplace l&apos;AVL par un arbre vide] </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a82630baa2869275d044e3f25d40d52f7">
+                <title>boolean AVLString.estVide ()</title> <emphasis></emphasis>
+                
+<para>[estVide =&gt; Renvoie vrai si l&apos;AVL est vide, faux sinon] <formalpara><title>Returns: </title>
+
+<para>[booléen] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a5f0d9ef42d56854c6977b1e7e143197e">
+                <title>boolean AVLString.estFeuille ()</title> <emphasis></emphasis>
+                
+<para>[estFeuille =&gt; Renvoie vrai si l&apos;AVL correspond à un AVL feuille, faux sinon] <formalpara><title>Returns: </title>
+
+<para>[booléen] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1ae45259bb6e0ecd30b7764c270f2421eb">
+                <title>void AVLString.bal ()</title> <emphasis></emphasis>
+                
+<para>[bal =&gt; Recalcule récursivement la balance de l&apos;AVL et celles de tous ses fils] </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1aa452d84d47b7bf724362d5f856be3374">
+                <title>int AVLString.hauteur ()</title> <emphasis></emphasis>
+                
+<para>[hauteur =&gt; Renvoie la hauteur de l&apos;AVL (la racine étant à la hauteur 0)] <formalpara><title>Returns: </title>
+
+<para>[entier] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1abd6d41261357b2501fc805216f6eb456">
+                <title>boolean AVLString.element (String elt)</title> <emphasis></emphasis>
+                
+<para>[element =&gt; Renvoie vrai si elt est présent dans l&apos;AVL, faux sinon] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>elt</entry>
+                                <entry>
+<para>[String] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>[booléen] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a450d8ec3c60cf1a989f03112f4b9855d">
+                <title>int AVLString.ajout (String elt)</title> <emphasis></emphasis>
+                
+<para>[ajout =&gt; Ajoute elt à l&apos;AVL, et retourne la variation de hauteur] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>elt</entry>
+                                <entry>
+<para>[String] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>[entier] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a1f73174ef1b9a223d94e44719cc6736f">
+                <title>int AVLString.suppr (String elt)</title> <emphasis></emphasis>
+                
+<para>[suppr =&gt; Retire le noeud ayant elt pour élément de l&apos;AVL (s&apos;il existe)] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>elt</entry>
+                                <entry>
+<para>[String] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a738d9b71bb2ee680c2bebe547da683e7">
+                <title>void AVLString.copy (AVLString av)</title> <emphasis></emphasis>
+                
+<para>[copy =&gt; Retourne une copie de l&apos;AVL passé en paramètre] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>av</entry>
+                                <entry>
+<para>[AVL] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1ad960ebcc3991cb679add72f3dda4caa0">
+                <title>void AVLString.rotG ()</title> <emphasis></emphasis>
+                
+<para>[rotG =&gt; Effectue une rotation gauche (simple) sur l&apos;AVL] </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a16e45537a756d78a0f54020e4ca3dd82">
+                <title>void AVLString.rotD ()</title> <emphasis></emphasis>
+                
+<para>[rotD =&gt; Effectue une rotation droite (simple) sur l&apos;AVL] </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1ae9bb040328e2fe9a02ae68178231cf41">
+                <title>void AVLString.dRotG ()</title> <emphasis></emphasis>
+                
+<para>[dRotG =&gt; Effectue une double rotation gauche sur l&apos;AVL] </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a6234278e0d2587d5f899dc003c7d1de6">
+                <title>void AVLString.dRotD ()</title> <emphasis></emphasis>
+                
+<para>[dRotD =&gt; Effectue une double rotation droite sur l&apos;AVL] </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1afd90cb3564177a7a37056164d039b0dd">
+                <title>void AVLString.equilibrer ()</title> <emphasis></emphasis>
+                
+<para>[equilibrer =&gt; Méthode appellée pour équilibrer l&apos;AVL après ajout ou suppression] </para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1aa1d9f436aa7766d5ec0498454f32dfe9">
+                <title>String AVLString.max ()</title> <emphasis></emphasis>
+                
+<para>[max =&gt; Retourne le plus grand élément de l&apos;AVL (-1 si l&apos;AVL est vide)] <formalpara><title>Returns: </title>
+
+<para>[entier] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a9535c4d4517a1103149b348e1126765d">
+                <title>String AVLString.min ()</title> <emphasis></emphasis>
+                
+<para>[min =&gt; Retourne le plus petit élément de l&apos;AVL (&quot;!&quot; si l&apos;AVL est vide)]] <formalpara><title>Returns: </title>
+
+<para>[entier] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a5d47afdb15e0cf57f7e27c2f1e1a3c3d">
+                <title>int AVLString.oterMax ()</title> <emphasis></emphasis>
+                
+<para>[oterMax =&gt; Retire le noeud contenant le plus grand élément de l&apos;AVL (si celui-ci n&apos;est pas vide)] <formalpara><title>Returns: </title>
+
+<para>[entier (correspondant à la variation de hauteur)] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a4bb66e491eccfc0531239f57bf9b01f1">
+                <title>int AVLString.oterMin ()</title> <emphasis></emphasis>
+                
+<para>[oterMin =&gt; Retire le noeud contenant le plus petit élément de l&apos;AVL (si celui-ci n&apos;est pas vide)] <formalpara><title>Returns: </title>
+
+<para>[entier (correspondant à la variation de hauteur)] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1abe38e3948352fcffc2db0f066c3b97cf">
+                <title>ArrayList&lt;String&gt; AVLString.trier (ArrayList&lt; String &gt; l)</title> <emphasis></emphasis>
+                
+<para>[trier =&gt; Trie une liste de String en utilisant un AVL (ordre lexicographique)] NB: La méthode n&apos;utilise pas l&apos;AVL auquel la méthode est appliquée au cas ou celui-ci ne serait pas vide, ce qui fausserait le résultat 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>l</entry>
+                                <entry>
+<para>[ArrayList&lt;String&gt; liste de Strings dont l&apos;ordre est quelconque] </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>[ArrayList&lt;String&gt; liste de Strings triées par ordre croissant] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1aa8e9250c0b5719b2f197e24c4be4b9e8">
+                <title>ArrayList&lt;String&gt; AVLString.pref ()</title> <emphasis></emphasis>
+                
+<para>[pref =&gt; Retourne le parcours préfixe de l&apos;AVL] <formalpara><title>Returns: </title>
+
+<para>[ArrayList&lt;String&gt;] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a0efe1dbea6307856f3b727df8663b66f">
+                <title>ArrayList&lt;String&gt; AVLString.symm ()</title> <emphasis></emphasis>
+                
+<para>[symm =&gt; Retourne le parcours symétrique de l&apos;AVL] <formalpara><title>Returns: </title>
+
+<para>[ArrayList&lt;String&gt;] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1a11601b5dbb6e37215708938323364af7">
+                <title>ArrayList&lt;String&gt; AVLString.post ()</title> <emphasis></emphasis>
+                
+<para>[post =&gt; Retourne le parcours postfixe de l&apos;AVL] <formalpara><title>Returns: </title>
+
+<para>[ArrayList&lt;String&gt;] </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_a_v_l_string_1adde3aa65616bf1c05ea2407ea8cb255f">
+                <title>String AVLString.print (int ch)</title> <emphasis></emphasis>
+                
+<para>[print =&gt; Renvoie une chaîne représentant l&apos;AVL en liste par son parcours préfixe, symétrique ou postfixe selon la valeur de l&apos;entier passé en paramètre] 
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>ch</entry>
+                                <entry>
+<para>[entier, définissant le parcours devant être utilisé pour représenter l&apos;AVL] si ch == 1 : parcours préfixe si ch == 2 : parcours symétrique si ch == 3 : parcours postfixe </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>[chaîne de caractères] </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

@@ -1,0 +1,758 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_a_v_l_string" kind="class" prot="public">
+    <compoundname>AVLString</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_v_l_string_1adb167b91de2f634545354179d75c7a2a" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String AVLString.rac_</definition>
+        <argsstring></argsstring>
+        <name>rac_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>racine String </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="15" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_v_l_string_1ad79e01875b56754629c8e0c928fcf530" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_v_l_string" kindref="compound">AVLString</ref></type>
+        <definition>AVLString AVLString.filsG_</definition>
+        <argsstring></argsstring>
+        <name>filsG_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fils gauche -&gt; lui-même AVL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="16" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_v_l_string_1a683f6fd78271d50b935b0255ffc7441a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_v_l_string" kindref="compound">AVLString</ref></type>
+        <definition>AVLString AVLString.filsD_</definition>
+        <argsstring></argsstring>
+        <name>filsD_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>fils droit -&gt; lui-même AVL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="17" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_v_l_string_1a5a492e5ae84bdf492f68e1f41e918734" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AVLString.bal_</definition>
+        <argsstring></argsstring>
+        <name>bal_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>balance -&gt; entier </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="18" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_v_l_string_1a7cae60ef637f6aad039371478fc5deed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AVLString.AVLString</definition>
+        <argsstring>()</argsstring>
+        <name>AVLString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[<ref refid="class_a_v_l_string" kindref="compound">AVLString</ref> =&gt; Construit un AVL &quot;vide&quot;] <simplesect kind="return"><para>[équivalent d&apos;un AVL vide -&gt; racine et sous arbres non initialisés] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="37" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a03a3566175c444bf44100d4b5ed8ae3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AVLString.AVLString</definition>
+        <argsstring>(String rac)</argsstring>
+        <name>AVLString</name>
+        <param>
+          <type>String</type>
+          <declname>rac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[<ref refid="class_a_v_l_string" kindref="compound">AVLString</ref> =&gt; Construit un AVL &quot;feuille&quot;] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[valeur de la racine] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[équivalent d&apos;un AVL feuille -&gt; racine initialisée et sous-arbres vides] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="50" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="50" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1ad54ef293b3b066f1cfbcfd33b110a523" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AVLString.AVLString</definition>
+        <argsstring>(String rac, AVLString filsG, AVLString filsD)</argsstring>
+        <name>AVLString</name>
+        <param>
+          <type>String</type>
+          <declname>rac</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_v_l_string" kindref="compound">AVLString</ref></type>
+          <declname>filsG</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_v_l_string" kindref="compound">AVLString</ref></type>
+          <declname>filsD</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[<ref refid="class_a_v_l_string" kindref="compound">AVLString</ref> =&gt; Construit un AVL donc la forme dépendra des paramètres passés] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[valeur de la racine] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filsG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[AVL qui sera fils gauche] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filsD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[AVL qui sera fils droit] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[AVL de forme quelconque, selon les paramètres passés] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="68" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="68" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a04e9b58049f335c818886b69ae3ececc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String AVLString.elt</definition>
+        <argsstring>()</argsstring>
+        <name>elt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[elt =&gt; Retourne la racine de l&apos;AVL] <simplesect kind="return"><para>[String (valeur de la racine)] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="92" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a0c2b74170cea4c3aae4859c9504f8440" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_a_v_l_string" kindref="compound">AVLString</ref></type>
+        <definition>AVLString AVLString.sag</definition>
+        <argsstring>()</argsstring>
+        <name>sag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[sag =&gt; Retourne le sous-arbre gauche de l&apos;AVL] <simplesect kind="return"><para>[AVL (sous-arbre gauche)] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="98" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a5ed9a9d93f55b1691126934d33b7ff04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_a_v_l_string" kindref="compound">AVLString</ref></type>
+        <definition>AVLString AVLString.sad</definition>
+        <argsstring>()</argsstring>
+        <name>sad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[sad =&gt; Retourne le sous-arbre droit de l&apos;AVL] <simplesect kind="return"><para>[AVL (sous-arbre droit)] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="104" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a9b6514bbe1eeb60cd063038f633638a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AVLString.getBal</definition>
+        <argsstring>()</argsstring>
+        <name>getBal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[getBal =&gt; Retourne la balance de l&apos;AVL] <simplesect kind="return"><para>[entier (balance)] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="110" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1aa1de0f428ebeb20058ac04f03f948220" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.setRac</definition>
+        <argsstring>(String rac)</argsstring>
+        <name>setRac</name>
+        <param>
+          <type>String</type>
+          <declname>rac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[setRac =&gt; Remplace la valeur de la racine] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[String] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="125" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1ac4f52500381c77fb5ec4a1f30cc98f9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.setFilsG</definition>
+        <argsstring>(AVLString filsG)</argsstring>
+        <name>setFilsG</name>
+        <param>
+          <type><ref refid="class_a_v_l_string" kindref="compound">AVLString</ref></type>
+          <declname>filsG</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[setFilsG =&gt; Remplace le fils gauche] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filsG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[AVL] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="131" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1afe2973bf4e0b311745d8a0e78ce37f87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.setFilsD</definition>
+        <argsstring>(AVLString filsD)</argsstring>
+        <name>setFilsD</name>
+        <param>
+          <type><ref refid="class_a_v_l_string" kindref="compound">AVLString</ref></type>
+          <declname>filsD</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[setFilsD =&gt; Remplace le fils droit] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filsD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[AVL] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="137" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1af557c5f3b98c3df26a8866e89fd4e173" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.setBal</definition>
+        <argsstring>(int bal)</argsstring>
+        <name>setBal</name>
+        <param>
+          <type>int</type>
+          <declname>bal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[setBal =&gt; Remplace la balance] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[entier] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="143" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a822881c4be4ef7e6aada44f6b9b9487a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.avlVide</definition>
+        <argsstring>()</argsstring>
+        <name>avlVide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[avlVide =&gt; Remplace l&apos;AVL par un arbre vide] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="157" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="157" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a82630baa2869275d044e3f25d40d52f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean AVLString.estVide</definition>
+        <argsstring>()</argsstring>
+        <name>estVide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[estVide =&gt; Renvoie vrai si l&apos;AVL est vide, faux sinon] <simplesect kind="return"><para>[booléen] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="169" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a5f0d9ef42d56854c6977b1e7e143197e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean AVLString.estFeuille</definition>
+        <argsstring>()</argsstring>
+        <name>estFeuille</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[estFeuille =&gt; Renvoie vrai si l&apos;AVL correspond à un AVL feuille, faux sinon] <simplesect kind="return"><para>[booléen] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="178" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="178" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1ae45259bb6e0ecd30b7764c270f2421eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.bal</definition>
+        <argsstring>()</argsstring>
+        <name>bal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[bal =&gt; Recalcule récursivement la balance de l&apos;AVL et celles de tous ses fils] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="189" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="189" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1aa452d84d47b7bf724362d5f856be3374" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AVLString.hauteur</definition>
+        <argsstring>()</argsstring>
+        <name>hauteur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[hauteur =&gt; Renvoie la hauteur de l&apos;AVL (la racine étant à la hauteur 0)] <simplesect kind="return"><para>[entier] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="205" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="205" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1abd6d41261357b2501fc805216f6eb456" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean AVLString.element</definition>
+        <argsstring>(String elt)</argsstring>
+        <name>element</name>
+        <param>
+          <type>String</type>
+          <declname>elt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[element =&gt; Renvoie vrai si elt est présent dans l&apos;AVL, faux sinon] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[String] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[booléen] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="218" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="218" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a450d8ec3c60cf1a989f03112f4b9855d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AVLString.ajout</definition>
+        <argsstring>(String elt)</argsstring>
+        <name>ajout</name>
+        <param>
+          <type>String</type>
+          <declname>elt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[ajout =&gt; Ajoute elt à l&apos;AVL, et retourne la variation de hauteur] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[String] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[entier] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="235" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="235" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a1f73174ef1b9a223d94e44719cc6736f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AVLString.suppr</definition>
+        <argsstring>(String elt)</argsstring>
+        <name>suppr</name>
+        <param>
+          <type>String</type>
+          <declname>elt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[suppr =&gt; Retire le noeud ayant elt pour élément de l&apos;AVL (s&apos;il existe)] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[String] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="277" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="277" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a738d9b71bb2ee680c2bebe547da683e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.copy</definition>
+        <argsstring>(AVLString av)</argsstring>
+        <name>copy</name>
+        <param>
+          <type><ref refid="class_a_v_l_string" kindref="compound">AVLString</ref></type>
+          <declname>av</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[copy =&gt; Retourne une copie de l&apos;AVL passé en paramètre] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>av</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[AVL] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="321" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="321" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1ad960ebcc3991cb679add72f3dda4caa0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.rotG</definition>
+        <argsstring>()</argsstring>
+        <name>rotG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[rotG =&gt; Effectue une rotation gauche (simple) sur l&apos;AVL] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="344" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="344" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a16e45537a756d78a0f54020e4ca3dd82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.rotD</definition>
+        <argsstring>()</argsstring>
+        <name>rotD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[rotD =&gt; Effectue une rotation droite (simple) sur l&apos;AVL] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="395" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="395" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1ae9bb040328e2fe9a02ae68178231cf41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.dRotG</definition>
+        <argsstring>()</argsstring>
+        <name>dRotG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[dRotG =&gt; Effectue une double rotation gauche sur l&apos;AVL] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="446" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="446" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a6234278e0d2587d5f899dc003c7d1de6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.dRotD</definition>
+        <argsstring>()</argsstring>
+        <name>dRotD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[dRotD =&gt; Effectue une double rotation droite sur l&apos;AVL] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="457" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="457" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1afd90cb3564177a7a37056164d039b0dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AVLString.equilibrer</definition>
+        <argsstring>()</argsstring>
+        <name>equilibrer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[equilibrer =&gt; Méthode appellée pour équilibrer l&apos;AVL après ajout ou suppression] </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="468" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="468" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1aa1d9f436aa7766d5ec0498454f32dfe9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String AVLString.max</definition>
+        <argsstring>()</argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[max =&gt; Retourne le plus grand élément de l&apos;AVL (-1 si l&apos;AVL est vide)] <simplesect kind="return"><para>[entier] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="490" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="490" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a9535c4d4517a1103149b348e1126765d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String AVLString.min</definition>
+        <argsstring>()</argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[min =&gt; Retourne le plus petit élément de l&apos;AVL (&quot;!&quot; si l&apos;AVL est vide)]] <simplesect kind="return"><para>[entier] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="504" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="504" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a5d47afdb15e0cf57f7e27c2f1e1a3c3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AVLString.oterMax</definition>
+        <argsstring>()</argsstring>
+        <name>oterMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[oterMax =&gt; Retire le noeud contenant le plus grand élément de l&apos;AVL (si celui-ci n&apos;est pas vide)] <simplesect kind="return"><para>[entier (correspondant à la variation de hauteur)] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="518" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="518" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a4bb66e491eccfc0531239f57bf9b01f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AVLString.oterMin</definition>
+        <argsstring>()</argsstring>
+        <name>oterMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[oterMin =&gt; Retire le noeud contenant le plus petit élément de l&apos;AVL (si celui-ci n&apos;est pas vide)] <simplesect kind="return"><para>[entier (correspondant à la variation de hauteur)] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="559" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="559" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1abe38e3948352fcffc2db0f066c3b97cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>ArrayList&lt;String&gt; AVLString.trier</definition>
+        <argsstring>(ArrayList&lt; String &gt; l)</argsstring>
+        <name>trier</name>
+        <param>
+          <type>ArrayList&lt; String &gt;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[trier =&gt; Trie une liste de String en utilisant un AVL (ordre lexicographique)] NB: La méthode n&apos;utilise pas l&apos;AVL auquel la méthode est appliquée au cas ou celui-ci ne serait pas vide, ce qui fausserait le résultat <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[ArrayList&lt;String&gt; liste de Strings dont l&apos;ordre est quelconque] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[ArrayList&lt;String&gt; liste de Strings triées par ordre croissant] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="602" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="602" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1aa8e9250c0b5719b2f197e24c4be4b9e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>ArrayList&lt;String&gt; AVLString.pref</definition>
+        <argsstring>()</argsstring>
+        <name>pref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[pref =&gt; Retourne le parcours préfixe de l&apos;AVL] <simplesect kind="return"><para>[ArrayList&lt;String&gt;] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="614" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="614" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a0efe1dbea6307856f3b727df8663b66f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>ArrayList&lt;String&gt; AVLString.symm</definition>
+        <argsstring>()</argsstring>
+        <name>symm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[symm =&gt; Retourne le parcours symétrique de l&apos;AVL] <simplesect kind="return"><para>[ArrayList&lt;String&gt;] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="634" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="634" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1a11601b5dbb6e37215708938323364af7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>ArrayList&lt;String&gt; AVLString.post</definition>
+        <argsstring>()</argsstring>
+        <name>post</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[post =&gt; Retourne le parcours postfixe de l&apos;AVL] <simplesect kind="return"><para>[ArrayList&lt;String&gt;] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="654" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="654" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_v_l_string_1adde3aa65616bf1c05ea2407ea8cb255f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String AVLString.print</definition>
+        <argsstring>(int ch)</argsstring>
+        <name>print</name>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>[print =&gt; Renvoie une chaîne représentant l&apos;AVL en liste par son parcours préfixe, symétrique ou postfixe selon la valeur de l&apos;entier passé en paramètre] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[entier, définissant le parcours devant être utilisé pour représenter l&apos;AVL] si ch == 1 : parcours préfixe si ch == 2 : parcours symétrique si ch == 3 : parcours postfixe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[chaîne de caractères] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="678" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="678" bodyend="714"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>String</label>
+      </node>
+      <node id="9">
+        <label>int</label>
+      </node>
+      <node id="7">
+        <label>AVLString</label>
+        <link refid="class_a_v_l_string"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-rac_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-bal_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-filsG_</edgelabel>
+          <edgelabel>-filsD_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" line="12" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/AVLString.java" bodystart="11" bodyend="747"/>
+    <listofallmembers>
+      <member refid="class_a_v_l_string_1a450d8ec3c60cf1a989f03112f4b9855d" prot="public" virt="non-virtual"><scope>AVLString</scope><name>ajout</name></member>
+      <member refid="class_a_v_l_string_1a7cae60ef637f6aad039371478fc5deed" prot="public" virt="non-virtual"><scope>AVLString</scope><name>AVLString</name></member>
+      <member refid="class_a_v_l_string_1a03a3566175c444bf44100d4b5ed8ae3e" prot="public" virt="non-virtual"><scope>AVLString</scope><name>AVLString</name></member>
+      <member refid="class_a_v_l_string_1ad54ef293b3b066f1cfbcfd33b110a523" prot="public" virt="non-virtual"><scope>AVLString</scope><name>AVLString</name></member>
+      <member refid="class_a_v_l_string_1a822881c4be4ef7e6aada44f6b9b9487a" prot="public" virt="non-virtual"><scope>AVLString</scope><name>avlVide</name></member>
+      <member refid="class_a_v_l_string_1ae45259bb6e0ecd30b7764c270f2421eb" prot="public" virt="non-virtual"><scope>AVLString</scope><name>bal</name></member>
+      <member refid="class_a_v_l_string_1a5a492e5ae84bdf492f68e1f41e918734" prot="private" virt="non-virtual"><scope>AVLString</scope><name>bal_</name></member>
+      <member refid="class_a_v_l_string_1a738d9b71bb2ee680c2bebe547da683e7" prot="public" virt="non-virtual"><scope>AVLString</scope><name>copy</name></member>
+      <member refid="class_a_v_l_string_1a6234278e0d2587d5f899dc003c7d1de6" prot="public" virt="non-virtual"><scope>AVLString</scope><name>dRotD</name></member>
+      <member refid="class_a_v_l_string_1ae9bb040328e2fe9a02ae68178231cf41" prot="public" virt="non-virtual"><scope>AVLString</scope><name>dRotG</name></member>
+      <member refid="class_a_v_l_string_1abd6d41261357b2501fc805216f6eb456" prot="public" virt="non-virtual"><scope>AVLString</scope><name>element</name></member>
+      <member refid="class_a_v_l_string_1a04e9b58049f335c818886b69ae3ececc" prot="public" virt="non-virtual"><scope>AVLString</scope><name>elt</name></member>
+      <member refid="class_a_v_l_string_1afd90cb3564177a7a37056164d039b0dd" prot="public" virt="non-virtual"><scope>AVLString</scope><name>equilibrer</name></member>
+      <member refid="class_a_v_l_string_1a5f0d9ef42d56854c6977b1e7e143197e" prot="public" virt="non-virtual"><scope>AVLString</scope><name>estFeuille</name></member>
+      <member refid="class_a_v_l_string_1a82630baa2869275d044e3f25d40d52f7" prot="public" virt="non-virtual"><scope>AVLString</scope><name>estVide</name></member>
+      <member refid="class_a_v_l_string_1a683f6fd78271d50b935b0255ffc7441a" prot="private" virt="non-virtual"><scope>AVLString</scope><name>filsD_</name></member>
+      <member refid="class_a_v_l_string_1ad79e01875b56754629c8e0c928fcf530" prot="private" virt="non-virtual"><scope>AVLString</scope><name>filsG_</name></member>
+      <member refid="class_a_v_l_string_1a9b6514bbe1eeb60cd063038f633638a0" prot="public" virt="non-virtual"><scope>AVLString</scope><name>getBal</name></member>
+      <member refid="class_a_v_l_string_1aa452d84d47b7bf724362d5f856be3374" prot="public" virt="non-virtual"><scope>AVLString</scope><name>hauteur</name></member>
+      <member refid="class_a_v_l_string_1aa1d9f436aa7766d5ec0498454f32dfe9" prot="public" virt="non-virtual"><scope>AVLString</scope><name>max</name></member>
+      <member refid="class_a_v_l_string_1a9535c4d4517a1103149b348e1126765d" prot="public" virt="non-virtual"><scope>AVLString</scope><name>min</name></member>
+      <member refid="class_a_v_l_string_1a5d47afdb15e0cf57f7e27c2f1e1a3c3d" prot="public" virt="non-virtual"><scope>AVLString</scope><name>oterMax</name></member>
+      <member refid="class_a_v_l_string_1a4bb66e491eccfc0531239f57bf9b01f1" prot="public" virt="non-virtual"><scope>AVLString</scope><name>oterMin</name></member>
+      <member refid="class_a_v_l_string_1a11601b5dbb6e37215708938323364af7" prot="public" virt="non-virtual"><scope>AVLString</scope><name>post</name></member>
+      <member refid="class_a_v_l_string_1aa8e9250c0b5719b2f197e24c4be4b9e8" prot="public" virt="non-virtual"><scope>AVLString</scope><name>pref</name></member>
+      <member refid="class_a_v_l_string_1adde3aa65616bf1c05ea2407ea8cb255f" prot="public" virt="non-virtual"><scope>AVLString</scope><name>print</name></member>
+      <member refid="class_a_v_l_string_1adb167b91de2f634545354179d75c7a2a" prot="private" virt="non-virtual"><scope>AVLString</scope><name>rac_</name></member>
+      <member refid="class_a_v_l_string_1a16e45537a756d78a0f54020e4ca3dd82" prot="public" virt="non-virtual"><scope>AVLString</scope><name>rotD</name></member>
+      <member refid="class_a_v_l_string_1ad960ebcc3991cb679add72f3dda4caa0" prot="public" virt="non-virtual"><scope>AVLString</scope><name>rotG</name></member>
+      <member refid="class_a_v_l_string_1a5ed9a9d93f55b1691126934d33b7ff04" prot="public" virt="non-virtual"><scope>AVLString</scope><name>sad</name></member>
+      <member refid="class_a_v_l_string_1a0c2b74170cea4c3aae4859c9504f8440" prot="public" virt="non-virtual"><scope>AVLString</scope><name>sag</name></member>
+      <member refid="class_a_v_l_string_1af557c5f3b98c3df26a8866e89fd4e173" prot="public" virt="non-virtual"><scope>AVLString</scope><name>setBal</name></member>
+      <member refid="class_a_v_l_string_1afe2973bf4e0b311745d8a0e78ce37f87" prot="public" virt="non-virtual"><scope>AVLString</scope><name>setFilsD</name></member>
+      <member refid="class_a_v_l_string_1ac4f52500381c77fb5ec4a1f30cc98f9c" prot="public" virt="non-virtual"><scope>AVLString</scope><name>setFilsG</name></member>
+      <member refid="class_a_v_l_string_1aa1de0f428ebeb20058ac04f03f948220" prot="public" virt="non-virtual"><scope>AVLString</scope><name>setRac</name></member>
+      <member refid="class_a_v_l_string_1a1f73174ef1b9a223d94e44719cc6736f" prot="public" virt="non-virtual"><scope>AVLString</scope><name>suppr</name></member>
+      <member refid="class_a_v_l_string_1a0efe1dbea6307856f3b727df8663b66f" prot="public" virt="non-virtual"><scope>AVLString</scope><name>symm</name></member>
+      <member refid="class_a_v_l_string_1abe38e3948352fcffc2db0f066c3b97cf" prot="public" virt="non-virtual"><scope>AVLString</scope><name>trier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

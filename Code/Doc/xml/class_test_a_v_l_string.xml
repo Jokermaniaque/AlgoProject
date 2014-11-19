@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_test_a_v_l_string" kind="class" prot="package">
+    <compoundname>TestAVLString</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_test_a_v_l_string_1aeb4da230c4e739cd26106f6bafcdbc59" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void TestAVLString.main</definition>
+        <argsstring>(String args[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>String</type>
+          <declname>args</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/TestAVLString.java" line="8" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/TestAVLString.java" bodystart="8" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>TestAVLString</label>
+        <link refid="class_test_a_v_l_string"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/TestAVLString.java" line="7" column="1" bodyfile="/mnt/327B6FA771D4C150/Google Drive/Fac/L3/L3S1/Algorithmique & Structures de données 3/Projet/ProjetII/Structures de données/AVL (String)/TestAVLString.java" bodystart="6" bodyend="134"/>
+    <listofallmembers>
+      <member refid="class_test_a_v_l_string_1aeb4da230c4e739cd26106f6bafcdbc59" prot="public" virt="non-virtual"><scope>TestAVLString</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

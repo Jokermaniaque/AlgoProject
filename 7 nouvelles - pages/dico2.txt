@@ -1,0 +1,1291 @@
+ 
+ 1
+ a
+ a 1
+ a c
+ a d
+ a l
+ a p
+ a t
+ a u
+ a é
+ a.
+ b
+ c
+ c'e
+ c'é
+ d
+ d'a
+ d'h
+ d'i
+ d'u
+ e
+ f
+ g
+ h
+ h.
+ i
+ j
+ j'a
+ j'e
+ j'i
+ j'o
+ j'y a
+ j'y c
+ j'y p
+ j'é
+ l
+ l'a
+ l'e
+ l'h
+ l'i
+ l'o
+ l'u
+ l'é
+ m
+ m'é
+ m.
+ m.b
+ n
+ n'e
+ n'i
+ n'o
+ n'y c
+ n'y m
+ o
+ p
+ q
+ r
+ r-m.
+ r.a
+ s
+ s'a
+ s'e
+ s'i
+ s'é
+ t
+ u
+ v
+ w.
+ y c
+ à
+ à a
+ à b
+ à c
+ à l
+ à l'a
+ à l'e
+ à m
+ à m.
+ à n
+ à n'e
+ à p
+ à q
+ à t
+ à u
+ à v
+ ç
+ é
+ ê
+!
+!1
+!4
+!a
+!a c
+!d
+!e
+!h
+!i
+!j
+!j'é
+!l
+!n
+!p
+!t
+(a
+(c
+(d'u
+(i
+(j
+(o
+(t
+)
+)i
+)q
+,
+,f
+-
+-l.
+.
+.a
+.j'é
+.n'o
+.s
+0
+0 a
+0,
+0.
+1
+1 h
+1-
+2
+2-
+3
+3,
+3-
+4
+4«
+5
+6
+6-
+7
+7-
+7.c
+8
+9
+9 d
+9-
+:
+:1
+:c
+:d'a
+:d'u
+:l
+:l'e
+;
+;c
+;d
+;d'a
+;e
+;h
+;i
+;l
+;l'i
+;m
+;n
+;s
+;t
+?
+?1
+?3
+?e
+?j'a
+?t
+a
+a 
+a a
+a b
+a c
+a d
+a d'a
+a d'e
+a d'o
+a d'ê
+a e
+a f
+a g
+a h
+a i
+a j
+a l
+a l'a
+a l'e
+a l'i
+a l'o
+a l'u
+a m
+a m'e
+a n
+a n'a a
+a p
+a q
+a r
+a s
+a s'i
+a t
+a u
+a v
+a à
+a à 
+a à c
+a à d
+a à l
+a à l'a
+a à s
+a à t
+a)
+a,
+a-s
+a-t-e
+a-t-i
+a.
+a.c'é
+b
+b,
+c
+c 
+c a
+c b
+c c
+c d
+c e
+c f
+c g
+c i
+c j
+c l
+c l'e
+c m
+c n
+c p
+c q
+c r
+c s
+c t
+c u
+c v
+c à
+c é
+c,
+d
+d 
+d a
+d c
+d d
+d e
+d g
+d h.
+d i
+d j
+d j'a
+d l
+d m
+d o
+d p
+d q
+d s
+d s'a
+d t
+d u
+d v
+d à
+d à a
+d à l
+d é
+d'a
+d'e
+d'h
+d'i
+d'o
+d'u
+d'y p
+d'é
+d,
+d-i
+d-m
+d.
+d.l
+d;c
+e
+e 
+e 1
+e 2
+e a
+e a d
+e a p
+e a s
+e b
+e c
+e c'e
+e d
+e d'a
+e d'e
+e d'h
+e d'i
+e d'u
+e d'y r
+e d'é
+e d'ê
+e e
+e f
+e g
+e h
+e i
+e j
+e j'a
+e j'e
+e j'i
+e j'y a
+e j'é
+e l
+e l'a
+e l'a d
+e l'a v
+e l'e
+e l'h
+e l'i
+e l'o
+e l'u
+e l'é
+e m
+e m'a
+e m'a r
+e m'e
+e m'i
+e m'y
+e m'y o
+e m'é
+e m.
+e m.h
+e n
+e n'a
+e n'e
+e n'y a
+e n'y c
+e n'y s
+e n'y t
+e n'y v
+e n'é
+e o
+e p
+e q
+e r
+e s
+e s'a
+e s'e
+e s'i
+e s'é
+e t
+e t'a
+e t'e
+e t'i
+e t'o
+e u
+e v
+e w
+e y c
+e à
+e à a
+e à b
+e à c
+e à d
+e à f
+e à g
+e à l
+e à l'a
+e à l'e
+e à l'i
+e à l'o
+e à m
+e à m.
+e à q
+e à s
+e à t
+e à u
+e à v
+e à.
+e â
+e é
+e!
+e(c
+e)
+e,
+e,c
+e,d'u
+e,e
+e,h
+e,j
+e,j'a
+e,l
+e,m
+e,m.
+e,p
+e,q
+e,r
+e,t
+e,u
+e,é
+e-
+e-a
+e-c
+e-g
+e-h
+e-m
+e-p
+e-t-e
+e-v
+e.
+e.1
+e.3
+e.6«
+e.a
+e.c
+e.e
+e.h
+e.i
+e.j'a
+e.l
+e.l'e
+e.o
+e.p
+e.q
+e.s
+e.t
+e:
+e;
+e»
+f
+f 
+f a
+f d
+f e
+f h
+f l
+f m
+f s
+f u
+f,
+f.
+f;i
+g
+g d
+g e
+g s
+g,
+g.
+g.1
+h
+h 
+h b
+h!
+h,
+h.
+i
+i 
+i a
+i a d
+i b
+i c
+i d
+i d'a
+i d'i
+i d'o
+i d'u
+i e
+i f
+i g
+i h
+i i
+i j
+i j'y a
+i j'y c
+i j'y f
+i j'y p
+i j'é
+i l
+i l'e
+i l'o
+i m
+i m'a
+i m'a s
+i n
+i n'a
+i n'a p
+i n'o
+i o
+i p
+i q
+i r
+i s
+i s'y r
+i t
+i t'a f
+i u
+i v
+i y
+i à b
+i à c
+i à d
+i à l
+i à l'e
+i à l'h
+i à l'o
+i à m
+i à p
+i à q
+i à r
+i à s
+i à t
+i à v
+i é
+i,
+i,c
+i,d
+i-c
+i-g
+i-h
+i-j
+i-l
+i-m
+i-s
+i.
+i.1
+i.a
+i.i
+i.j'a
+i.l
+i.p
+i.q
+j
+j'a
+k
+k 
+k a
+k n
+k o
+k,
+k.
+l
+l 
+l a
+l a c
+l a d
+l a f
+l a t
+l a é
+l b
+l c
+l d
+l d'e
+l e
+l f
+l g
+l h
+l i
+l j
+l l
+l l'a
+l l'a é
+l l'o
+l l'é
+l m
+l m'a
+l m'a e
+l m'a f
+l m'a é
+l m'e
+l m'é
+l n
+l n'a
+l n'a é
+l n'e
+l n'o
+l n'y a
+l n'y a p
+l n'é
+l o
+l p
+l q
+l r
+l s
+l s'a
+l s'e
+l s'i
+l s'é
+l t
+l v
+l y a
+l y a q
+l y e
+l à
+l é
+l'
+l'a
+l'e
+l'h
+l'i
+l'o
+l'u
+l'é
+l,
+l.
+l.3
+l.a
+l.e
+m
+m 
+m a
+m b
+m c
+m d
+m d'
+m e
+m l
+m m
+m q
+m s
+m'a
+m'e
+m'h
+m,
+m.
+n
+n 
+n a
+n a b
+n a l'é
+n a p
+n a r
+n a.
+n b
+n c
+n d
+n d'a
+n d'e
+n d'i
+n d'u
+n e
+n f
+n g
+n h
+n i
+n j
+n j'y s
+n j.
+n l
+n l'a
+n l'i
+n m
+n m'a
+n m'i
+n n
+n n'a
+n n'e
+n o
+n p
+n q
+n r
+n s
+n s'a
+n t
+n u
+n v
+n à c
+n à f
+n à l
+n à l'i
+n à m
+n à q
+n à s
+n â
+n é
+n ê
+n'a
+n'a-t-i
+n'o
+n,
+n,a
+n,d
+n,m
+n,t
+n-c
+n-o
+n-t
+n-ê
+n.
+n.c'e
+n.c'é
+n.i
+n.m
+n.p
+n.t
+n;
+o
+o d
+o,
+o.
+p
+p c
+p d
+p d'a
+p g
+p h
+p l
+p m
+p o
+p p
+p é
+p,
+p.
+q
+q 
+q i
+q j
+q m
+q t
+r
+r 
+r 1
+r a
+r a b
+r a p
+r b
+r c
+r d
+r d'a
+r d'o
+r d'u
+r d'â
+r e
+r f
+r g
+r h
+r i
+r j
+r j'e
+r l
+r l'a
+r l'e
+r l'i
+r l'o
+r l'é
+r m
+r m'e
+r m'o
+r m'é
+r n
+r o
+r p
+r q
+r r
+r s
+r s'a
+r s'e
+r s'é
+r t
+r t'a
+r u
+r v
+r x.g
+r à
+r à a
+r à b
+r à c
+r à d
+r à l
+r à l'a
+r à m
+r à n
+r à p
+r à q
+r à r
+r à s
+r à u
+r à v
+r à é
+r é
+r'o
+r)
+r,
+r,a
+r,o
+r-l
+r-p
+r-v
+r.
+r.2
+r.a
+r.d
+r.i
+r.j'a
+r.l
+r.l'e
+r.l'o
+r.v
+s
+s 
+s a
+s a f
+s a p
+s b
+s c
+s c'e
+s d
+s d'a
+s d'e
+s d'h
+s d'i
+s d'o
+s d'u
+s d'é
+s e
+s f
+s g
+s h
+s i
+s j
+s j'a
+s l
+s l'a
+s l'e
+s l'i
+s l'o
+s l'u
+s l'â
+s l'é
+s m
+s m'a
+s m'e
+s n
+s n'a
+s n'e
+s n'y a
+s n'é
+s n'ê
+s o
+s p
+s q
+s r
+s s
+s s'a
+s s'e
+s s'i
+s s'é
+s t
+s u
+s v
+s w
+s y
+s y a
+s y d
+s à
+s à a
+s à c
+s à e
+s à l
+s à l'a
+s à l'e
+s à l'o
+s à l'u
+s à l'é
+s à m
+s à n
+s à p
+s à q
+s à s
+s à s'e
+s à s'é
+s é
+s ê
+s î
+s'a
+s'e
+s'i
+s'o
+s'y p
+s'é
+s)
+s,
+s,c
+s,d
+s,i
+s,m
+s,n
+s,p
+s,s
+s,t
+s,à n
+s-c
+s-j
+s-l
+s-m
+s-n
+s-t
+s-u
+s-v
+s.
+s.2
+s.4
+s.c
+s.e
+s.i
+s.j
+s.l'e
+s.l'o
+s.l'é
+s.m
+s.o
+s.p
+s.t
+s;
+s?
+s«d
+s»
+t
+t 
+t 1
+t 2
+t a
+t a m
+t a u
+t a é
+t b
+t c
+t c'e
+t d
+t d'
+t d'a
+t d'e
+t d'h
+t d'i
+t d'o
+t d'u
+t d'y r
+t d'é
+t e
+t f
+t g
+t h
+t i
+t j
+t j'a
+t j'o
+t j'é
+t k
+t l
+t l'a
+t l'a b c 
+t l'e
+t l'i
+t l'o
+t l'u
+t l'â
+t m
+t m'a
+t m.
+t n
+t n'e
+t o
+t p
+t q
+t r
+t s
+t s'a
+t s'e
+t s'i
+t s'é
+t t
+t t'e
+t u
+t v
+t w.
+t à
+t à a
+t à b
+t à c
+t à d
+t à h
+t à l
+t à l'a
+t à l'h
+t à l'i
+t à m
+t à n
+t à p
+t à q
+t à r
+t à s
+t à t
+t à u
+t à v
+t à é
+t à ê
+t é
+t ê
+t'e
+t,
+t,b
+t,c
+t,d
+t,e
+t,l
+t,l'h
+t,n
+t,t
+t-a
+t-c
+t-e
+t-i
+t-l
+t-q
+t-à-d
+t-ê
+t.
+t.1
+t.a
+t.c'é
+t.d
+t.i
+t.j
+t.l'o
+t.n
+t.t
+t?
+t«f
+u
+u 
+u a
+u b
+u c
+u d
+u d'a
+u d'e
+u d'o
+u d'u
+u e
+u f
+u g
+u h
+u i
+u j
+u l
+u m
+u m'a
+u m'i
+u n
+u n'a
+u n'y a
+u n'é
+u o
+u p
+u q
+u r
+u s
+u t
+u t'a
+u t'é
+u u
+u v
+u y e
+u à
+u à c
+u à l'o
+u à p
+u à u
+u é
+u ê
+u'a
+u'e
+u'i
+u'o
+u'u
+u'à c
+u'à d
+u'à l
+u'à m
+u'à m'e
+u'à t
+u'à u
+u,
+u,a
+u,d'a
+u-d
+u-f
+u-v
+u.
+u.c
+u.j
+u.t
+v
+w
+w-j
+w-y
+x
+x 
+x a
+x b
+x c
+x d
+x d'a
+x e
+x f
+x g
+x h
+x j
+x l
+x m
+x n
+x o
+x p
+x q
+x r
+x s
+x t
+x t'e
+x u
+x v
+x z
+x à l
+x é
+x ê
+x,
+x,s
+x-j
+x.
+x.2
+x.c
+x?
+y
+y 
+y a
+y a q
+y c
+y d
+y e
+y h
+y l
+y p
+y r
+y s
+y s'e
+y t
+y é
+y,
+y.
+y;
+z
+z 
+z a
+z b
+z c
+z d
+z d'a
+z e
+z f
+z g
+z j
+z l
+z m
+z p
+z q
+z r
+z s
+z u
+z v
+z à n
+z à u
+z ê
+z,
+z-l
+z-m
+z-v
+z.
+«
+«a
+«o
+»
+»2
+»3
+»c'e
+»d
+»i
+»j
+»j'é
+»l
+»l'e
+»p
+»s
+»u
+à
+à 
+à a
+à b
+à c
+à d
+à h
+à i
+à l
+à l'e
+à m
+à n
+à o
+à p
+à q
+à s
+à t
+à u
+à v
+à,
+à-d
+à.
+â
+ç
+è
+é
+é 
+é a
+é a p
+é b
+é c
+é d
+é d'i
+é d'u
+é d'é
+é e
+é f
+é g
+é h
+é l
+é l'o
+é l'é
+é m
+é m'a
+é n
+é o
+é p
+é q
+é r
+é s
+é s'e
+é t
+é u
+é w
+é à c
+é à m
+é à p
+é à u
+é é
+é)
+é,
+é,m
+é,t
+é-j
+é.
+é.4
+é.5«
+é.c
+é.e
+é.i
+é.j
+é.l'e
+é.m
+é.t
+ê
+î
+ï
+ô
+ù 
+ù d
+ù e
+ù i
+ù j
+ù l
+ù l'h
+ù n
+ù s
+ù v
+ù,
+û
+û d
+û m
+û r
